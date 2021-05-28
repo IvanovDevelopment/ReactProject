@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import {Nodes} from './components/Sidebar/Nodes';
+import Nodes from './components/Sidebar/Nodes';
 import {Kernel} from './components/Sidebar/Kernel';
 import { Route, Switch } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
@@ -15,7 +15,7 @@ function App() {
     <BrowserRouter>
       <Navbar />
       
-      <div className="row">
+      <div className="row pt-3">
         <div className = "col-md-3 m-2">
           <Switch>
             <Route path={'/nodes'} exact component={Nodes}/>
